@@ -6,7 +6,7 @@
 ## Overview
 
 This repository contains a minimal research implementation for **single-image super-resolution (SISR)** of **Landsat thermal infrared (TIR)** imagery using a **SwinIR-based network**.  
-It is designed for participants of the **Landsat SISR Experimental Competition**, aiming to benchmark super-resolution methods on low-resolution thermal bands.
+It is designed for participants of the **Landsat SISR Experimental Competition**, aiming to find a practical and effective way to apply super-resolution to public thermal products that have already been upsampled or projected.
 
 Only the essential components are included for transparency and reproducibility:
 
@@ -22,7 +22,7 @@ Pre-trained models for this experiment (denoted **m-2 family**) are available he
 
 🔗 [Google Drive – m-2 Weights](https://drive.google.com/drive/folders/1xeECUR_DYOrPYHPki4vLWt-IaUY3NB89?usp=sharing)
 
-These models are trained specifically for **thermal infrared single-band imagery** (e.g., Landsat Band 10/11) and should not be used for other image modalities.
+These models are trained specifically for **native resolution TIR imagery** (e.g., Landsat Band 10/11) and do not work for upsampled TIR imagery.
 
 ---
 
