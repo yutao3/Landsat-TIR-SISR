@@ -40,7 +40,7 @@ sudo apt-get install gdal-bin python3-gdal
 
 python sisr_auto_landsat_tir_single_band.py <input.tif> <output_dir> <weights.pth> [-COG] [-CLEAN]
 
-Arguments:
+#### Arguments:
 
 <input.tif>: Input Landsat TIR GeoTIFF (UInt16 or Float32)
 
@@ -52,11 +52,11 @@ Arguments:
 
 -CLEAN (optional): Delete intermediate PNGs and temporary tiles after completion
 
-Example:
+#### Example:
 
 python sisr_auto_landsat_tir_single_band.py L8_TIR_20230614.tif out_dir pre-trained-models/m-2_psnr.pth -COG
 
-The script will:
+#### The script will:
 
 1. Automatically preprocess the input (GeoTIFF → PNG + metadata header)
 
@@ -64,7 +64,7 @@ The script will:
 
 3. Restore geospatial metadata and generate the final super-resolved GeoTIFF
 
-Output Description
+#### Output Description
 
 Final Output: <basename>.srr.tif
 
