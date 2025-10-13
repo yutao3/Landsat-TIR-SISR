@@ -1,5 +1,7 @@
-# Implementation of SwinIR: Image Restoration Using Swin Transformer, https://arxiv.org/abs/2108.10257
-# Modified by Yu Tao based on code originally written by Ze Liu and Jingyun Liang for the SwinIR network architecture, https://github.com/JingyunLiang/SwinIR
+# -----------------------------------------------------------------------------------
+# SwinIR: Image Restoration Using Swin Transformer, https://arxiv.org/abs/2108.10257
+# Originally Written by Ze Liu, Modified by Jingyun Liang.
+# -----------------------------------------------------------------------------------
 
 import math
 import torch
