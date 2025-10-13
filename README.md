@@ -53,14 +53,16 @@ Arguments:
 -CLEAN (optional): Delete intermediate PNGs and temporary tiles after completion
 
 Example:
+
 python sisr_auto_landsat_tir_single_band.py L8_TIR_20230614.tif out_dir pre-trained-models/m-2_psnr.pth -COG
+
 The script will:
 
-Automatically preprocess the input (GeoTIFF → PNG + metadata header)
+1. Automatically preprocess the input (GeoTIFF → PNG + metadata header)
 
-Run SwinIR inference using inference.py
+2. Run SwinIR inference using inference.py
 
-Restore geospatial metadata and generate the final super-resolved GeoTIFF
+3. Restore geospatial metadata and generate the final super-resolved GeoTIFF
 
 Output Description
 
