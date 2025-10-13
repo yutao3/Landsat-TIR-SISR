@@ -30,13 +30,18 @@ These models are trained specifically for **native resolution TIR imagery** (e.g
 
 ### 1. Dependencies
 Install Python 3.8+ and required packages:
-```bash
+
 pip install numpy opencv-python torch torchvision
+
 For GeoTIFF I/O:
 sudo apt-get install gdal-bin python3-gdal
-2. Run the Landsat TIR SISR Pipeline
+
+### 2. Run the Landsat TIR SISR Pipeline
+
 python sisr_auto_landsat_tir_single_band.py <input.tif> <output_dir> <weights.pth> [-COG] [-CLEAN]
+
 Arguments:
+
 <input.tif>: Input Landsat TIR GeoTIFF (UInt16 or Float32)
 
 <output_dir>: Output directory for intermediate and final products
@@ -58,41 +63,25 @@ Run SwinIR inference using inference.py
 Restore geospatial metadata and generate the final super-resolved GeoTIFF
 
 Output Description
+
 Final Output: <basename>.srr.tif
+
 Super-resolved GeoTIFF at 4× resolution, with original projection and nodata preserved.
 
 Intermediate Files: PNG and .x4header.tif files (removed automatically if -CLEAN flag used).
 
 Optional: Cloud-Optimized GeoTIFF (-COG) for large datasets.
 
-Acknowledgements and Intellectual Property Rights (IPR)
-This implementation and its model architecture are based on the open-source SwinIR project:
+### License and Acknowledgements
+
+This project is released under the Apache 2.0 license. This implementation's model architecture is based on the open-source SwinIR project:
 
 Liang, J., Cao, J., Sun, G., Zhang, K., Van Gool, L., & Timofte, R. (2021).
 SwinIR: Image Restoration Using Swin Transformer
 GitHub: https://github.com/JingyunLiang/SwinIR
 
-The network_architecture.py and inference.py scripts in this repository adapt and extend the original SwinIR implementation for the specific case of geospatial single-band (TIR) Landsat imagery.
-
-All intellectual property rights of the SwinIR architecture remain with the original authors and contributors.
-This repository only provides derived, research-oriented code for experimentation under fair academic use.
-
-Research-Only Disclaimer
-This repository and its contents are provided strictly for research and educational purposes.
-Commercial use, redistribution, or modification for proprietary applications is not permitted without explicit written consent from the respective right holders.
-
+Please also follow their licenses.
 All materials are provided “as is,” without warranty of any kind.
-
-Citation
-If you use this repository in your research or competition submission, please cite both:
-
-Tao, Y. (Surrey AI Imaging Limited), Landsat-TIR-SISR Experimental Toolbox, GitHub repository, 2025.
-https://github.com/[YOUR_ORG]/Landsat-TIR-SISR
-
-and
-
-Liang, J. et al. (2021). SwinIR: Image Restoration Using Swin Transformer, GitHub repository.
-https://github.com/JingyunLiang/SwinIR
 
 Contact
 For academic or research collaboration enquiries, please contact:
