@@ -72,7 +72,9 @@ Intermediate Files: PNG and .x4header.tif files (removed automatically if -CLEAN
 
 Optional: Cloud-Optimized GeoTIFF (-COG) for large datasets.
 
-### License and Acknowledgements
+---
+
+## License and Acknowledgements
 
 This project is released under the Apache 2.0 license. This implementation's model architecture is based on the open-source SwinIR project:
 
