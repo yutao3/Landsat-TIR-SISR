@@ -6,12 +6,14 @@
 ## Overview
 
 This repository contains a minimal research implementation for **single-image super-resolution (SISR)** of **Landsat thermal infrared (TIR)** imagery using a **SwinIR-based network**.  
-It is designed for participants of the **Landsat SISR Experimental Competition**, aiming to find a practical and effective way to apply super-resolution to public thermal products that have already been upsampled or projected.
+This experiment aims to find a practical and effective way to apply super-resolution to public thermal products that have already been upsampled or projected.
 
 Only the essential components are included for transparency and reproducibility:
 
 sisr_auto_landsat_tir_single_band.py # Complete end-to-end pipeline for Landsat TIR (1-band UInt16/Float32)
+
 inference.py # Model inference using SwinIR-based network
+
 network_architecture.py # Network architecture (adapted from SwinIR)
 
 ---
