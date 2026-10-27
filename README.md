@@ -22,7 +22,7 @@ network_architecture.py # Network architecture (adapted from SwinIR)
 
 Pre-trained models for this experiment (denoted **m-2 family**) are available here:
 
-🔗 [Google Drive – m-2 Weights](https://drive.google.com/drive/folders/1xeECUR_DYOrPYHPki4vLWt-IaUY3NB89?usp=sharing)
+🔗 [Google Drive – m-2 Weights]([https://drive.google.com/drive/folders/1xeECUR_DYOrPYHPki4vLWt-IaUY3NB89?usp=sharing](https://drive.google.com/drive/folders/1MV2JO5trlqxgubrc3ADUCxL2EOE6iZ_p?usp=sharing))
 
 These models are trained specifically for **native resolution TIR imagery** (e.g., Landsat Band 10/11) and do not work for upsampled TIR imagery.
 
@@ -63,7 +63,7 @@ python sisr_auto_landsat_tir_single_band.py <input.tif> <output_dir> <weights.pt
 
 #### Example:
 
-python sisr_auto_landsat_tir_single_band.py L8_TIR_20230614.tif out_dir pre-trained-models/m-2_psnr.pth -COG
+python sisr_auto_landsat_tir_single_band.py L8_TIR_20230614.tif out_dir pre-trained-models/m-2_gan.pth -COG
 
 #### The script will:
 
