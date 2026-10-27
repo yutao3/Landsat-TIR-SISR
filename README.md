@@ -28,6 +28,25 @@ These models are trained specifically for **native resolution TIR imagery** (e.g
 
 ---
 
+## Example Results
+
+The following examples demonstrate the 4× super-resolution performance of our SwinIR-based model on Landsat thermal infrared imagery.
+
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <img src="figures/landsat_l1a_band10_100m.png" width="100%" alt="Original Landsat TIR"/>
+      <br/>
+      <b>(a) Original Landsat TIR</b>
+    </td>
+    <td align="center" width="50%">
+      <img src="figures/landsat_l1a_band10_100m_sisr_res1_25m.png" width="100%" alt="Super-resolved Landsat TIR"/>
+      <br/>
+      <b>(b) Super-resolved TIR (4×)</b>
+    </td>
+  </tr>
+</table>
+
 ## Usage
 
 ### 1. Dependencies
